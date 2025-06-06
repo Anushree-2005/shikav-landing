@@ -122,6 +122,7 @@ nav {
 .hero {
     padding: 8rem 0rem 5rem;
     background: linear-gradient(135deg, #F6F9FF 0%, #F1F5FF 100%);
+    
 }
 
 .hero-image img{
@@ -483,6 +484,38 @@ footer {
 .contact-info a:hover {
     color: var(--primary);
     opacity: 1;
+}
+
+/* Hero Buttons */
+.hero-btns {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Update responsive styles for hero buttons */
+@media (max-width: 768px) {
+    .hero-btns {
+        justify-content: center;
+        flex-direction: row; /* Keep buttons in row even on mobile */
+    }
+
+    .hero-btns .btn {
+        min-width: 160px; /* Set minimum width for buttons */
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-btns {
+        flex-direction: column; /* Stack buttons only on very small screens */
+        align-items: center;
+    }
+
+    .hero-btns .btn {
+        width: 100%;
+        max-width: 200px;
+    }
 }
 
 /* Responsive Design */
