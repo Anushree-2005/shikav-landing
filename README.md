@@ -30,16 +30,6 @@ This project was created as part of a design submission for the **Web Design Vol
 
 ---
 
-## 📁 Folder Structure
-
-├── index.html
-├── style.css
-├── assets/
-│ └── images, icons, etc.
-├── README.md
-
----
-
 ## 👩‍💻 Author
 
 **Anushree Chavan**  
