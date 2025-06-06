@@ -203,7 +203,10 @@ nav {
     border-radius: 50px;
     text-decoration: none;
     font-weight: 500;
-    transition: all 0.3s ease;
+    text-align: center;
+    white-space: nowrap; /* Prevent text wrapping */
+    line-height: 1.2; /* Consistent line height */
+    min-width: 160px; /* Minimum width to prevent squishing */
 }
 
 .btn-primary {
@@ -491,6 +494,7 @@ footer {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
+    align-items: center; /* Align buttons vertically */
 }
 
 /* Update responsive styles for hero buttons */
@@ -508,11 +512,11 @@ footer {
 
 @media (max-width: 480px) {
     .hero-btns {
-        flex-direction: column; /* Stack buttons only on very small screens */
-        align-items: center;
+        flex-direction: column;
+        width: 100%;
     }
 
-    .hero-btns .btn {
+    .btn {
         width: 100%;
         max-width: 200px;
     }
